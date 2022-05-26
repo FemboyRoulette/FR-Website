@@ -1,0 +1,138 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    background-color:rgb(32, 32, 32);
+}
+
+.landing {
+    /* Font Utilities */
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1.2px;
+    color: white;
+    
+    /* Size Utilities */
+    width: 900px;
+    height: 50px;
+
+    /* Position Utilities */
+    margin-top: 6%;
+    margin-left: 4.5%;
+}
+
+.landing:hover {
+    color: pink;
+    letter-spacing: 1px;
+
+    transition: color 0.2s;
+    transition: letter-spacing 1s;
+
+    cursor: default;
+}
+
+button {
+    background-color: rgb(21, 21, 21);
+    color: white;
+
+    width: 100px;
+    height: 50px;
+
+    margin-left: 5.5%;
+    margin-right: -5%;
+
+    border-radius: 20px;
+    border: none;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+    width: 110px;
+
+    transition: width 0.2s, color 1s, background-color 0.2s;
+
+    
+    cursor: pointer;
+}
+
+.zenith {
+    background-color: rgb(21, 21, 21);
+    color: white;
+
+    width: 100px;
+    height: 50px;
+
+    margin-left: 66%;
+
+    border-radius: 20px;
+    border: none;
+}
+
+.content{  
+    visibility: hidden;
+
+    font-size: xx-small;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    margin-left: 75%;
+
+    position: fixed;
+}
+
+.zenith:hover + .content{
+    visibility: visible;
+
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 20px;
+
+    transition:  color 1s, background-color 2s, font-size 2s;
+
+    position: fixed;
+}
+
+.home {}
+.api {}
+.about {}
+
+.textt {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+
+    color: white;
+}
+
+.textt:hover {
+    letter-spacing: 4px;
+    color: pink;
+    font-size: xx-large;
+
+    transition: letter-spacing 2s, color 1s, font-size 2.2s;
+}
+
+.text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+
+    color: white;
+}
+
+.text:hover {
+    letter-spacing: 2px;
+    color: pink;
+
+    transition: letter-spacing 2s, color 1s;
+}
+
+a {
+    color: crimson;
+}
+
+b {
+    color: rgb(194, 3, 3);
+}
