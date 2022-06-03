@@ -42,9 +42,41 @@
     </div>
 </a>
 <br>
+<div class="maintext">
+    <br>
     <center>
-        <div class="container">
-            
-        </div>
+        Welcome to <a>FemboyRoulette</a>!<br>
+        We hope you enjoy looking at our cute boys uwu~<br>
+
+        Also don't forget to join the <a href="https://discord.gg/QkNbaBqKjh">Discord</a>
     </center>
+</div>
+<div class="artist">
+    
+</div>
+<div class="container">
+            
+</div>
+<a href="">
+<button class="button next">></button>
+</a>
 </body>
+
+<script>
+    const xhr = new XMLHttpRequest();
+    const container = document.getElementsByClassName("container")[0];
+    var img = document.createElement("img");
+    var artist = document.getElementsByClassName("artist")[0];
+    img.style.maxWidth = "30%";
+    xhr.open("GET", "https://api.femboyroulette.ga/");
+    xhr.send();
+    xhr.onreadystatechange = (e) => {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            var i = JSON.parse(xhr.responseText);
+            img.src = i["image"];
+            artist.innerHTML = i["artist"];
+        }
+    }
+    container.appendChild(img);
+    container.appendChild(artist);
+</script>

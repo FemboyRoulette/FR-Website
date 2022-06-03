@@ -1,5 +1,5 @@
 html {
-    overflow: hidden;
+    overflow: visible;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
     height: 50px;
 
     /* Position Utilities */
-    margin-top: 6%;
+    margin-top: 2.5%;
     margin-left: 4.5%;
 }
 
@@ -39,11 +39,16 @@ button {
     width: 100px;
     height: 50px;
 
-    margin-left: 5.5%;
-    margin-right: -5%;
+    margin-left: 5%;
+    margin-right: -4%;
 
     border-radius: 20px;
     border: none;
+}
+
+.btxt {
+    color: white;
+    width: 20px;
 }
 
 button:hover {
@@ -64,8 +69,6 @@ button:hover {
     width: 100px;
     height: 50px;
 
-    margin-left: 66%;
-
     border-radius: 20px;
     border: none;
 }
@@ -77,7 +80,7 @@ button:hover {
     color: rgb(255, 255, 255);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-    margin-left: 75%;
+    margin-left: 8%;
 
     position: fixed;
 }
@@ -99,6 +102,32 @@ button:hover {
 .home {}
 .api {}
 .about {}
+.next {
+    position: relative;
+    width: 100px;
+    height: 50px;
+
+    margin-left: 89%;
+    margin-top: -3%;
+
+    border-radius: 900px;
+    border: none;
+}
+
+.artist {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+
+    color: white;
+}
+
+.maintext {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+
+    color: white;
+    margin-left: 40%;
+}
 
 .textt {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -138,6 +167,6 @@ b {
 }
 
 .container {
-    margin-top: 20px;
-    background-color: red;
+    margin-top: -6%;
+    margin-left: 8%;
 }
