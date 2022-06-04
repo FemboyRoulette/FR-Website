@@ -3,71 +3,57 @@
 <meta content="Femboy Roulette" property="og:title" />
 <meta content="SFW femboy art website uwu!" property="og:description" />
 <meta content="#ffc0cb" data-react-helmet="true" name="theme-color" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="./src/style/style.css">
 
-<body onload="newFact()">
-    <div class="landing">
-        Femboy Roulette
-</div>
-
-<a href="./index.html" style="text-decoration: none;">
-    <button class="button home">
-        Home
-    </button>
-</a>
-
-<a href="https://api.femboyroulette.ga" style="text-decoration: none;">
-    <button class="button api">
-        API
-    </button>
-</a>
-
-<a href="./about.html">
-    <button class="button about" style="text-decoration: none;">
-        About
-    </button>
-</a>
-
-<a href="https://femzoey.tk" style="text-decoration: none;">
-    <button class="button zenith">
-        Zenith
-    </button>
-    <div class="content">
-    <center>
-        Zenith is a lgbtq+ friendly discord bot which features it's
-        own slur filter and api integrations.<br>
-        Click on the button to find out more about Zenith.
-    </center>
+<div class="main">
+    <div class="mtxt">
+        <a href="./index.html" style="text-decoration: none;">
+        FemboyRoulette
+        </a>
     </div>
-</a>
-<br>
-<div class="maintext">
-    <br>
-    <center>
-        Welcome to <a>FemboyRoulette</a>!<br>
-        We hope you enjoy looking at our cute boys uwu~<br>
+</div>
 
-        Also don't forget to join the <a href="https://discord.gg/QkNbaBqKjh">Discord</a>
+<center>
+<div class="container"></div>
+<div class="artist"></div>
+</center>
+
+<div class="secondary">
+    <div class="stxt">
+        Made with ❤️ by Zoey.
+    </div>
+
+    <center>
+        <a href="./about.html">
+            <button class="button about">About</button></a>
+        <a href="https://api.femboyroulette.ga">
+            <button class="button api">API</button></a>
+        <a href="./contact.html">
+            <button class="button contact">Contact</button></a>
+        <a href="https://github.com/FemboyRoulette">
+            <button class="button github">Github</button></a>
+    </center>
+
+    <center>
+        <div class="disclaimer">
+            <p>
+                The images exhibited on this website are not owned by the owners of <b>FemboyRoulette</b><br>
+                and so they can be asked to be removed by their <b>respective owners</b> and <b>nobody else</b>.
+            </p>
+        </div>
     </center>
 </div>
-<div class="artist">
-    
-</div>
-<div class="container">
-            
-</div>
-<a href="">
-<button class="button next">></button>
-</a>
-</body>
+
+<a href=""><button class="button next">></button></a>
 
 <script>
     const xhr = new XMLHttpRequest();
     const container = document.getElementsByClassName("container")[0];
     var img = document.createElement("img");
     var artist = document.getElementsByClassName("artist")[0];
-    img.style.maxWidth = "30%";
+    img.style.maxWidth = "600px";
     xhr.open("GET", "https://api.femboyroulette.ga/");
     xhr.send();
     xhr.onreadystatechange = (e) => {

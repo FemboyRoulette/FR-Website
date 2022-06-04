@@ -3,170 +3,233 @@ html {
 }
 
 body {
-    background-color:rgb(32, 32, 32);
+    background-color:rgb(31, 31, 31)
 }
 
-.landing {
-    /* Font Utilities */
-    font-size: xx-large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    letter-spacing: 1.2px;
-    color: white;
-    
-    /* Size Utilities */
-    width: 900px;
-    height: 50px;
+/*Custom scrollbar*/
+ ::-webkit-scrollbar {
+    width: 12px;
+  }
 
-    /* Position Utilities */
-    margin-top: 2.5%;
-    margin-left: 4.5%;
-}
+  ::-webkit-scrollbar-track {
+    background-color: rgb(230, 222, 252);
+  }
 
-.landing:hover {
-    color: pink;
-    letter-spacing: 1px;
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(252, 180, 193);
+    border-radius: 8000px;
+  }
 
-    transition: color 0.2s;
-    transition: letter-spacing 1s;
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(160, 139, 217); 
+  }
 
-    cursor: default;
-}
-
-button {
-    background-color: rgb(21, 21, 21);
-    color: white;
-
-    width: 100px;
-    height: 50px;
-
-    margin-left: 5%;
-    margin-right: -4%;
-
-    border-radius: 20px;
-    border: none;
-}
-
-.btxt {
-    color: white;
-    width: 20px;
-}
-
-button:hover {
-    color: black;
-    background-color: white;
-    width: 110px;
-
-    transition: width 0.2s, color 1s, background-color 0.2s;
-
-    
-    cursor: pointer;
-}
-
-.zenith {
-    background-color: rgb(21, 21, 21);
-    color: white;
-
-    width: 100px;
-    height: 50px;
-
-    border-radius: 20px;
-    border: none;
-}
-
-.content{  
-    visibility: hidden;
-
-    font-size: xx-small;
-    color: rgb(255, 255, 255);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    margin-left: 8%;
-
-    position: fixed;
-}
-
-.zenith:hover + .content{
-    visibility: visible;
-
-    font-size: medium;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-
-    border-radius: 20px;
-
-    transition:  color 1s, background-color 2s, font-size 2s;
-
-    position: fixed;
-}
-
-.home {}
-.api {}
-.about {}
-.next {
-    position: relative;
-    width: 100px;
-    height: 50px;
-
-    margin-left: 89%;
-    margin-top: -3%;
-
-    border-radius: 900px;
-    border: none;
+/*Image displaying*/
+.container {
+    margin-top: 5.2%;
 }
 
 .artist {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: larger;
+    margin-top: 10px;
+    margin-bottom: 28px;
 
     color: white;
-}
-
-.maintext {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: larger;
-
-    color: white;
-    margin-left: 40%;
-}
-
-.textt {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: x-large;
-
-    color: white;
-}
-
-.textt:hover {
-    letter-spacing: 4px;
-    color: pink;
-    font-size: xx-large;
-
-    transition: letter-spacing 2s, color 1s, font-size 2.2s;
-}
-
-.text {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Header */
+
+.main {
+    background-color: rgb(51,51,51);
+    width: 100%;
+    height: 6%;
+
+    position: fixed;
+    overflow: absolute;
+
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.mtxt {
     color: white;
+    font-size: x-large;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+    margin-top: 0.5%;
+
+    text-align: center;
 }
 
-.text:hover {
-    letter-spacing: 2px;
-    color: pink;
+.mtxt:hover {
+    color: rgb(252, 180, 193);
+    letter-spacing: 20px;
 
-    transition: letter-spacing 2s, color 1s;
+    transition: letter-spacing 4s, color 3s;
 }
 
-a {
-    color: crimson;
+/* Buttons */
+
+button {
+ border: none;
+
+ background: none;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.next {
+  background-color: rgb(51,51,51);
+  color: white;
+
+  font-size: large;
+
+  position: relative;
+
+  margin-left: 94%;
+  margin-top: -6%;
+
+  width: 64px;
+  height: 64px;
+
+  border-radius: 9999px;
+}
+
+/* Footer */
+
+.secondary {
+  background-color: rgb(51,51,51);
+  width: 100%;
+  height: 18%;
+
+  position: absolute;
+  overflow: hidden;
+
+  padding-bottom: 4%;
+
+  margin: auto;
+  left: 0%;
+  right: 0;
+  bottom: -5% auto;
+}
+
+.stxt {
+  color: white;
+  font-size: x-large;
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+  margin-top: 0.8%;
+
+  text-align: center;
+}
+
+.about {
+  color: white;
+  font-size: x-large;
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+  margin-top: 0.8%;
+  margin-right: 20px;
+}
+
+.about:hover {
+  color: rgb(252, 180, 193);
+  letter-spacing: 5px;
+
+  transition: letter-spacing 0.2s, color 0.1s;
+  cursor: pointer;
+}
+
+.api {
+  color: white;
+  font-size: x-large;
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+  margin-top: 0.8%;
+  margin-right: 20px;
+}
+
+.api:hover {
+  color: rgb(252, 180, 193);
+  letter-spacing: 5px;
+
+  transition: letter-spacing 0.2s, color 0.1s;
+  cursor: pointer;
+}
+
+.contact {
+  color: white;
+  font-size: x-large;
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+  margin-top: 0.8%;
+  margin-right: 20px;
+}
+
+.contact:hover {
+  color: rgb(252, 180, 193);
+  letter-spacing: 5px;
+
+  transition: letter-spacing 0.2s, color 0.1s;
+  cursor: pointer;
+}
+
+.github {
+  color: white;
+  font-size: x-large;
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+  margin-top: 0.8%;
+  margin-right: 20px;
+}
+
+.github:hover {
+  color: rgb(252, 180, 193);
+  letter-spacing: 5px;
+
+  transition: letter-spacing 0.2s, color 0.1s;
+  cursor: pointer;
+}
+
+.disclaimer {
+  color: white;
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: larger;
+
+  margin-top: 0.8%;
 }
 
 b {
-    color: rgb(194, 3, 3);
+  color: red;
 }
 
-.container {
-    margin-top: -6%;
-    margin-left: 8%;
+/* About */
+
+body {
+  margin-top: 6.19%;
+}
+
+.babout {
+  margin-top: 7.5%;
+}
+
+.btext {
+  color: white;
+  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: larger;
+}
+
+a {
+  color: white;
 }
