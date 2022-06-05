@@ -99,6 +99,10 @@ button {
   border-radius: 9999px;
 }
 
+.next:hover {
+  cursor: pointer;
+}
+
 /* Footer */
 
 .secondary {
@@ -200,13 +204,37 @@ button {
   cursor: pointer;
 }
 
-.disclaimer {
+.dmcab {
   color: white;
 
+  margin-right: 20px;
+  margin-top: 2%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: larger;
+  font-size: large;
+}
 
-  margin-top: 0.8%;
+.dmcab:hover {
+  color: rgb(252, 180, 193);
+  letter-spacing: 5px;
+
+  transition: letter-spacing 0.2s, color 0.1s;
+  cursor: pointer;
+}
+
+.tos {
+  color: white;
+
+  margin-top: 2%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: large;
+}
+
+.tos:hover {
+  color: rgb(252, 180, 193);
+  letter-spacing: 5px;
+
+  transition: letter-spacing 0.2s, color 0.1s;
+  cursor: pointer;
 }
 
 b {
@@ -232,4 +260,16 @@ body {
 
 a {
   color: white;
+}
+
+/* DMCA */
+
+.bdmca {
+  margin-top: 8.2%;
+}
+
+/* TOS */
+
+.bTOS {
+  margin-top: 13.2%;
 }
