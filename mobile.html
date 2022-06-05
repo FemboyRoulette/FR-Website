@@ -1,0 +1,68 @@
+<title>Femboy Roulette</title>
+
+<meta content="Femboy Roulette" property="og:title" />
+<meta content="SFW femboy art website uwu!" property="og:description" />
+<meta content="#ffc0cb" data-react-helmet="true" name="theme-color" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="./src/style/mstyle.css">
+
+<div class="main">
+    <div class="mtxt">
+        <a href="./index.html" style="text-decoration: none;">
+        FemboyRoulette
+        </a>
+    </div>
+</div>
+
+<center>
+<div class="container"></div>
+<div class="artist"></div>
+</center>
+
+<div class="secondary">
+    <div class="stxt">
+        Made with ❤️ by Zoey.
+    </div>
+
+    <center>
+        <a href="./about.html">
+            <button class="button about">About</button></a>
+        <a href="https://api.femboyroulette.ga">
+            <button class="button api">API</button></a>
+        <a href="./contact.html">
+            <button class="button contact">Contact</button></a>
+        <a href="https://github.com/FemboyRoulette">
+            <button class="button github">Github</button></a>
+    </center>
+
+    <center>
+        <a href="./DMCA.html">
+            <button class="button Dmcab">DMCA</button></a>
+
+        <a href="./TOS.html">
+            <button class="button Tos">TOS</button></a>
+
+    </center>
+</div>
+
+<a href=""><button class="button next">></button></a>
+
+<script>
+    const xhr = new XMLHttpRequest();
+    const container = document.getElementsByClassName("container")[0];
+    var img = document.createElement("img");
+    var artist = document.getElementsByClassName("artist")[0];
+    img.style.maxWidth = "370px";
+    xhr.open("GET", "https://api.femboyroulette.ga/");
+    xhr.send();
+    xhr.onreadystatechange = (e) => {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            var i = JSON.parse(xhr.responseText);
+            img.src = i["image"];
+            artist.innerHTML = i["artist"];
+        }
+    }
+    container.appendChild(img);
+    container.appendChild(artist);
+</script>
