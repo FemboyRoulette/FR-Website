@@ -67,8 +67,8 @@
     container.appendChild(artist);
 </script>
 
-<script type='text/javascript' src="https://wurfl.io/wurfl.js">
-    if (WURFL.is_mobile === true) {
-    window.location.replace("./mobile.html");
+<script>
+       if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+        location.href = '/mobile.html';
     }
 </script>
